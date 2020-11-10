@@ -1,0 +1,47 @@
+[debug] [2020-11-09T11:28:26.785Z] ----------------------------------------------------------------------
+[debug] [2020-11-09T11:28:26.790Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\91997\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js functions:shell
+[debug] [2020-11-09T11:28:26.790Z] CLI Version:   8.6.0
+[debug] [2020-11-09T11:28:26.790Z] Platform:      win32
+[debug] [2020-11-09T11:28:26.791Z] Node Version:  v12.16.3
+[debug] [2020-11-09T11:28:26.795Z] Time:          Mon Nov 09 2020 16:58:26 GMT+0530 (India Standard Time)
+[debug] [2020-11-09T11:28:26.796Z] ----------------------------------------------------------------------
+[debug] [2020-11-09T11:28:26.796Z] 
+[debug] [2020-11-09T11:28:26.917Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-11-09T11:28:26.919Z] > authorizing via signed-in user
+[debug] [2020-11-09T11:28:26.925Z] [iam] checking project fireship-demos for permissions ["firebase.projects.get"]
+[debug] [2020-11-09T11:28:26.939Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2020-11-09T11:28:26.940Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2020-11-09T11:28:27.793Z] <<< HTTP RESPONSE 200 {"date":"Mon, 09 Nov 2020 11:28:28 GMT","expires":"Mon, 01 Jan 1990 00:00:00 GMT","pragma":"no-cache","cache-control":"no-cache, no-store, max-age=0, must-revalidate","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-Q050=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2020-11-09T11:28:29.197Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/fireship-demos:testIamPermissions  
+ {"permissions":["firebase.projects.get"]}
+[debug] [2020-11-09T11:28:31.237Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Mon, 09 Nov 2020 11:28:32 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=1286","alt-svc":"h3-Q050=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2020-11-09T11:28:31.238Z] [iam] error while checking permissions, command may fail: FirebaseError: Authorization failed. This account is missing the following required permissions on project fireship-demos:
+
+  firebase.projects.get
+[warn] !  Your requested "node" version "10" doesn't match your global version "12" {"metadata":{"emulator":{"name":"functions"},"message":"Your requested \"node\" version \"10\" doesn't match your global version \"12\""}}
+[debug] [2020-11-09T11:28:33.281Z] [functions] Watching "C:\Users\91997\Documents\WEb projects\react-firebase-chat\functions" for Cloud Functions...
+[debug] [2020-11-09T11:28:33.443Z] DEBUG: [worker-pool] addWorker(~diagnostic~)
+[debug] [2020-11-09T11:28:33.443Z] DEBUG: [worker-pool] Adding worker with key ~diagnostic~, total=1
+[debug] [2020-11-09T11:28:33.443Z] DEBUG: [worker-pool] submitWork(triggerId=)
+[debug] [2020-11-09T11:28:33.444Z] DEBUG: [worker-~diagnostic~-1554a397-50b6-4ed3-ae28-3849e6693e28]: Assigning socketPath: \\?\pipe\C:\Users\91997\Documents\WEb projects\react-firebase-chat\functions\21208
+[debug] [2020-11-09T11:28:33.445Z] DEBUG: [worker-~diagnostic~-1554a397-50b6-4ed3-ae28-3849e6693e28]: BUSY
+[debug] [2020-11-09T11:28:34.544Z] DEBUG: [runtime-status] [21208] Functions runtime initialized. {"cwd":"C:\\Users\\91997\\Documents\\WEb projects\\react-firebase-chat\\functions","node_version":"12.16.3"}
+[debug] [2020-11-09T11:28:34.548Z] DEBUG: [runtime-status] [21208] Disabled runtime features: undefined
+[debug] [2020-11-09T11:28:34.560Z] DEBUG: [runtime-status] [21208] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.13.0","resolution":"C:\\Users\\91997\\Documents\\WEb projects\\react-firebase-chat\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2020-11-09T11:28:34.564Z] DEBUG: [runtime-status] [21208] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.11.0","resolution":"C:\\Users\\91997\\Documents\\WEb projects\\react-firebase-chat\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2020-11-09T11:28:34.567Z] DEBUG: [runtime-status] [21208] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.11.0","resolution":"C:\\Users\\91997\\Documents\\WEb projects\\react-firebase-chat\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2020-11-09T11:28:34.570Z] DEBUG: [runtime-status] [21208] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}]
+[debug] [2020-11-09T11:28:34.571Z] DEBUG: [runtime-status] [21208] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.11.0","resolution":"C:\\Users\\91997\\Documents\\WEb projects\\react-firebase-chat\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2020-11-09T11:28:35.059Z] DEBUG: [runtime-status] [21208] Checked functions.config() {"config":{}}
+[debug] [2020-11-09T11:28:35.059Z] DEBUG: [runtime-status] [21208] firebase-functions has been stubbed. {"functionsResolution":{"declared":true,"installed":true,"version":"3.11.0","resolution":"C:\\Users\\91997\\Documents\\WEb projects\\react-firebase-chat\\functions\\node_modules\\firebase-functions\\lib\\index.js"}}
+[debug] [2020-11-09T11:28:35.061Z] DEBUG: [runtime-status] [21208] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.11.0","resolution":"C:\\Users\\91997\\Documents\\WEb projects\\react-firebase-chat\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2020-11-09T11:28:35.063Z] DEBUG: [runtime-status] [21208] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.13.0","resolution":"C:\\Users\\91997\\Documents\\WEb projects\\react-firebase-chat\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2020-11-09T11:28:35.064Z] DEBUG: [runtime-status] [21208] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.11.0","resolution":"C:\\Users\\91997\\Documents\\WEb projects\\react-firebase-chat\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2020-11-09T11:28:35.065Z] DEBUG: [runtime-status] [21208] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"8.13.0","resolution":"C:\\Users\\91997\\Documents\\WEb projects\\react-firebase-chat\\functions\\node_modules\\firebase-admin\\lib\\index.js"}}
+[debug] [2020-11-09T11:28:35.168Z] DEBUG: [runtime-status] [21208] initializeApp(DEFAULT) {"databaseURL":"https://fireship-demos.firebaseio.com","storageBucket":"fireship-demos.appspot.com","projectId":"fireship-demos"}
+[warn] !  functions: The Cloud Firestore emulator is not running, so calls to Firestore will affect production. {"metadata":{"emulator":{"name":"functions"},"message":"The Cloud Firestore emulator is not running, so calls to Firestore will affect production."}}
+[debug] [2020-11-09T11:28:37.813Z] [functions[detectEvilUsers]] function ignored because the firestore emulator does not exist or is not running.
+[info] i  functions: Loaded functions: detectEvilUsers 
+[warn] !  functions: The following emulators are not running, calls to these services will affect production: firestore, database, pubsub 
+[debug] [2020-11-09T11:28:37.844Z] DEBUG: [worker-~diagnostic~-1554a397-50b6-4ed3-ae28-3849e6693e28]: IDLE
